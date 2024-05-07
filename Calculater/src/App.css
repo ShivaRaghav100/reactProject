@@ -1,0 +1,30 @@
+.contener{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.button{
+    width: 45px;
+    height: 45px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: brown;
+    font-size: x-large;
+}
+.display {
+    margin: 10px;
+    width: 275px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .calculator{
+    margin: 5% 40%;
+    border: 1px solid;
+    width: 300px;
+    border-radius: 10px;
+    background-color: bisque;
+  }
