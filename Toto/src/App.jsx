@@ -8,17 +8,22 @@ function App() {
 
   const [todoItem,setTodoItem]=useState([])
   const handelNewItem =(itemName,itemDate)=>{
-    const newArray =[...todoItem, {name:itemName,date:itemDate},];
-
+    const newArray =[...todoItem, {name:itemName,date:itemDate, taskId: todoItem.length},];
     setTodoItem(newArray);
+    console.log(newArray);
   } 
 
+  const deletItem = (oldItemName)=>{
+    const newList = todoItem.filter((item)=> item.taskId !== oldItemName);
+    setTodoItem(newList);
+  }
+
   return (
-    <>
+    <div className='contnnair'>
     <TodoHeading/>
     <AddTodo onNewItem={handelNewItem}/>
-    <TodoItemAdd TodoItems={todoItem}/>
-    </>
+    <TodoItemAdd TodoItems={todoItem} onClickdelet={deletItem}/>
+    </div>
   )
 }
 

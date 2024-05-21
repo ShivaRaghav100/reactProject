@@ -1,0 +1,12 @@
+.contnnair{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    margin: 20px 20%;
+    font-weight: 600;
+}
+button{
+    margin: 10px;
+}

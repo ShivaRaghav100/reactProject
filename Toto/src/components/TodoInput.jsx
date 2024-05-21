@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MdAddToPhotos } from "react-icons/md";
-
+import '../App.css';
 const AddTodo = ({onNewItem})=>{
 
     const [name,setName] = useState();
@@ -21,10 +21,10 @@ const AddTodo = ({onNewItem})=>{
     };
 
 
-    return <div>
-        <input type="text" value={name} onChange={nameChangeHandlar}/>
-        <input type="date" value={date} onChange={dateChangeHandlar}/>
-        <button onClick={setNameDate}><MdAddToPhotos /></button>
+    return <div className="row">
+        <input className="col" type="text" value={name} onChange={nameChangeHandlar} />
+        <input className="col" type="date" value={date} onChange={dateChangeHandlar}/>
+        <button className="btn btn-success col" onClick={setNameDate}><MdAddToPhotos /></button>
     </div>
 }
 export default AddTodo;

@@ -1,0 +1,13 @@
+.app-contenier{
+  display: flex;
+}
+.AapContenerChild{
+  width: 100%;
+}
+.sideBar{
+  min-height: 740px;
+}
+.form{
+  margin: 20px 50px;
+  min-height: 450px;
+}

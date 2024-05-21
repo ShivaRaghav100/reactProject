@@ -1,15 +1,15 @@
 import { MdOutlineDelete } from "react-icons/md";
+import '../App.css';
 
-
-function TodoList ({todoName,todoDate}){
+function TodoList ({todoName,todoDate, taskId,onClickdelet}){
 
 
     return( 
-    <>
-        <div>{todoName}</div>
-        <div>{todoDate}</div>
-        <button><MdOutlineDelete/> </button>
-    </>
+    <div className="row">
+        <div className="col">{todoName}</div>
+        <div className="col">{todoDate}</div>
+        <button className="btn btn-danger col" onClick={()=>onClickdelet(taskId)} ><MdOutlineDelete/> </button>
+    </div>
     )
 }
 
