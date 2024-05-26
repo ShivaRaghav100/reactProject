@@ -6,11 +6,11 @@ const PostList =()=>{
     const {postList} = useContext(postListData);
 
     return(
-        <>
+        <div className="body">
             {postList.map((post)=>(
                 <Card key={post.id} post={post} />
             ))}
-        </>
+        </div>
     )
 }
 export default PostList;

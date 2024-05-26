@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { PostList } from "../Store/Post-list-store";
 import { AiFillDelete } from "react-icons/ai";
+import styles from "./Card.module.css";
 const Card = ({post})=>{
     
     const {deletePost} =useContext(PostList);
